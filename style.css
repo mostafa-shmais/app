@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, #100de5, #00fff3, #0077ff);
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: rgb(182 216 221 / 0%);
+}
+#h1header{
+    float: left;
+    line-height: 100px;
+    padding: 15px;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+}
+header a{
+    color: aqua;
+}
+nav{
+    width: 70%;
+    height: 10%;
+    padding-left: 30%;
+    margin: 8px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(20 40 87);
+    font-size: 0.5cm;
+    font-weight: bold;
+    display: contents;
+}
+nav li{
+    display: inline;
+    line-height: 160px;
+    width: 15%;
+    background-color: #00b4f900;
+    height: 10%;
+    text-align: left;
+    margin-right: 30px;
+}
+nav a:hover{
+ background-color:rgb(34, 139, 180) ;   
+  color:blue ;
+  height: 100%;
+  width: 100%;
+}
+main{
+    width: 100%;
+    height: 500px   ;
+    background-color: rgb(177 230 255 / 86%);
+    border-top: 3px solid white;
+  /**animation-name: changebackground;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;**/
+}
+/**
+@keyframes changebackground{
+    0%{
+        background-color: rgba(86, 160, 221, 0.815);
+    }
+    50%{
+        background-color: rgb(149, 149, 228);
+    }
+    100%
+    {
+        background-color: rgb(204, 252, 252);}
+}
+        **/
+
+    aside{
+        width: 30%;
+        height: 70%;
+         
+        text-align: center;
+        float: left;
+       
+    }
+aside img{
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+}
+#h1aside{
+    padding: 15px 5px;
+    border-bottom:  2px solid rgb(66, 73, 165);
+    color: rgb(77, 130, 243);
+}
+#articleid{
+    float: right    ;
+    width: 70%;
+   
+    height: 80%;
+    position: relative;
+}
+#box{
+    text-align: center;
+    width: 30%;
+    height:50%;
+    position: absolute;
+    
+    top: 25%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+}
+#box h1{
+    border-bottom: 3px solid rgb(31, 31, 41);
+    color: rgb(126, 172, 96);
+    padding: 15px 0;
+    text-align: center;
+}
+#box p{
+    color: rgb(127, 141, 99);
+    text-align: left;
+}
+#contect{
+    width:200px;
+    display: flex   ;
+    margin-left: 50px;
+    padding-right: 50px;
+
+
+}
+#contect img{
+    width: 55%;
+    padding-bottom: 15  px;
+    padding-top: 10px;
+    padding-left: 80px;
+}
+#contect img :hover{
+    width: 80%;
+}
+
+/* Media Queries */
+
+/* For small devices (phones, up to 768px) */
+@media screen and (max-width: 768px) {
+    /* Header Adjustments */
+    header {
+        height: auto; /* Allow dynamic height */
+        text-align: center;
+    }
+
+    #logobox {
+        width: 100%; /* Full width for logo section */
+        height: auto;
+        float: none; /* Stack vertically */
+        text-align: center; /* Center-align content */
+    }
+
+    #h1header {
+        float: none;
+        line-height: normal;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #logo {
+        max-width: 70%; /* Resize logo for smaller screens */
+        height: auto;
+    }
+
+    /* Navigation Adjustments */
+    nav {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Main Content Adjustments */
+    main {
+        height: auto; /* Allow dynamic height for main content */
+        padding: 10px;
+    }
+
+    /* Aside Adjustments */
+    aside {
+        width: 100%; /* Full width for aside */
+        height: auto; /* Dynamic height */
+        text-align: center;
+        float: none;
+    }
+
+    aside img {
+        width: 80%; /* Resize images */
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #h1aside {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    /* Article Section Adjustments */
+    #articleid {
+        width: 100%; /* Full width for article section */
+        float: none;
+        padding: 10px;
+    }
+
+    #box {
+        width: 90%; /* Expand box width for smaller screens */
+        left: 50%; /* Center align */
+        transform: translate(-50%, 0); /* Center align horizontally */
+        position: relative;
+        padding: 15px;
+    }
+
+    #box h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    #box p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    /* Contact Section Adjustments */
+    #contect {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    #contect img {
+        width: 60%; /* Resize contact images */
+        margin: 10px 0;
+    }
+}
