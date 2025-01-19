@@ -138,12 +138,12 @@ aside img {
 }
 
 /* Media query for phone screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     header {
-        height: 80px;
+        height: 100px;
     }
     #logobox {
-        width: 50%;
+        width: 4%;
         float: none;
         text-align: center;
     }
@@ -151,20 +151,23 @@ aside img {
         float: none;
         text-align: center;
         line-height: normal;
-        padding: 10px;
+        padding: 5px 2PX 2PX 10px ;
+        color:#3b4293;
+        
+       
     }
     nav {
-        width: 100%;
-        text-align: center;
-        padding-left: 0;
-        margin: 0;
+        width: 200%;
+        padding: 0;
+        display: inline-block;
     }
     nav li {
-        display: inline-block;
-        width: auto;
-        line-height: normal;
-        margin: 5px;
-        background-color: #00b4f900;
+        padding:10px;
+        margin: 0;
+        list-style: none;
+        display: inline-block
+;
+
     }
     nav a {
         font-size: 1rem;
@@ -173,27 +176,30 @@ aside img {
     aside {
         width: 100%;
         float: none;
-        margin-top: 20px;
+        margin-top: 160px;
+    }
+    #img1{
+        width: 200px;
     }
     #articleid {
         width: 100%;
         float: none;
         position: relative;
     }
-    #box {
+    #box {  
         width: 80%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #contect {
-        width: 100%;
-        flex-direction: column;
+        width: 20%;
+        flex-direction:row;
         margin-left: 0;
         padding-right: 0;
     }
     #contect img {
-        width: 100%;
+        width: 20%;
         padding-left: 0;
     }
 }
